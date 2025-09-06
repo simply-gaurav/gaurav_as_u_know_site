@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaurav As U Know</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="index-page">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="features.html">Features</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <h1>Welcome to Gaurav's Website!</h1>
+      <p>This is a full-fledged Node.js site that you can host online.</p>
+      <button id="mainActionButton" class="btn primary">Learn More</button>
+      <button class="btn secondary">Contact Us</button>
+      <div class="text-display">
+        <h2>Dynamic Content Area</h2>
+        <p id="dynamicText">Click the button to change this text.</p>
+      </div>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About Us</h2>
+      <p>We are a team dedicated to creating amazing web experiences. Our mission is to provide high-quality, scalable, and user-friendly solutions.</p>
+      <p>This section serves as an example of an "About" page, demonstrating how different content blocks can be structured.</p>
+    </section>
+
+    <section id="contact" class="content-section">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to get in touch? Fill out the form below or reach us at info@example.com.</p>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+    </section>
+
+    <section id="features" class="content-section">
+      <h2>Our Features</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Feature One: Dynamic Content</h3>
+          <p>Our dynamic content system allows for real-time updates without page reloads.</p>
+          <button class="btn feature-btn" data-feature="one">Learn More</button>
+        </div>
+        <div class="feature-item">
+          <h3>Feature Two: Responsive Design</h3>
+          <p>The website is built with a responsive design approach for optimal viewing.</p>
+          <button class="btn feature-btn" data-feature="two">Explore</button>
+        </div>
+        <div class="feature-item">
+          <h3>Feature Three: Easy Navigation</h3>
+          <p>Intuitive and smooth navigation makes it easy for users to find information.</p>
+          <button class="btn feature-btn" data-feature="three">Discover</button>
+        </div>
+      </div>
+      <div id="featureOutput" class="text-display">
+        <h3>Feature Output:</h3>
+        <p>No feature activated yet.</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Gaurav As U Know</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
