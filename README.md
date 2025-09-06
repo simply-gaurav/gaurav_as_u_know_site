@@ -103,9 +103,18 @@ Most platforms integrate with Git for easy deployment.
         *   Deploy: `git push heroku main`
         *   Open the app: `heroku open`
 
-    *   **For Vercel (Example):**
-        *   Install the Vercel CLI: `npm install -g vercel`
-        *   Deploy: `vercel` (follow the prompts)
+    *   **For Vercel (Detailed Steps for Static Site Hosting):**
+        1.  **Create a GitHub Repository**: Ensure your project is pushed to a GitHub (or GitLab/Bitbucket) repository. (You've already done this: `https://github.com/simply-gaurav/gaurav_as_u_know_site.git`)
+        2.  **Sign Up/Log In to Vercel**: Go to [vercel.com](https://vercel.com/) and sign up for a free account. It's recommended to sign up or log in with your GitHub account for seamless integration.
+        3.  **Create a New Project**: Once logged in, click the "New Project" button.
+        4.  **Import Git Repository**: Select "Import Git Repository" and choose your `gaurav_as_u_know_site` repository from the list.
+        5.  **Configure Project**:
+            *   Vercel will likely auto-detect it as a Node.js project.
+            *   **Crucially, you need to tell Vercel to serve only the static `public` directory.**
+            *   In the "Build & Development Settings" section, set the **Root Directory** to `public`. This tells Vercel to treat the `public` folder as the root of your project.
+            *   You can leave the "Build Command" and "Output Directory" as their defaults, or explicitly set "Build Command" to `echo "No build needed"` and "Output Directory" to `.`.
+        6.  **Deploy**: Click the "Deploy" button. Vercel will then build and deploy your site, providing you with a live URL.
+            *   Your deployed site is available at: `https://gaurav-as-u-know-site.vercel.app/index.html`
 
     *   **For other platforms:** Refer to their official documentation for specific deployment instructions. Generally, you'll connect your Git repository to the hosting service, and it will automatically build and deploy your application.
 
